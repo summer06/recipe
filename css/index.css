@@ -1,0 +1,200 @@
+/*animation*/
+@keyframes fade-in {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+@keyframes photo-play-1 {
+	0% {opacity: 0}
+	15% {opacity: 1}
+	30% {opacity: 0}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+
+@keyframes photo-play-2 {
+	0% {opacity: 0}
+	15% {opacity: 0}
+	30% {opacity: 1}
+	45% {opacity: 0}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+@keyframes photo-play-3 {
+	0% {opacity: 0}
+	30% {opacity: 0}
+	45% {opacity: 1}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+@keyframes photo-play-4 {
+	0% {opacity: 0}
+	45% {opacity: 0}
+	60% {opacity: 1}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+
+/*Safari and Chrome*/
+@-webkit-keyframes fade-in {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+@-webkit-keyframes photo-play-1 {
+	0% {opacity: 0}
+	15% {opacity: 1}
+	30% {opacity: 0}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+
+@-webkit-keyframes photo-play-2 {
+	0% {opacity: 0}
+	15% {opacity: 0}
+	30% {opacity: 1}
+	45% {opacity: 0}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+@-webkit-keyframes photo-play-3 {
+	0% {opacity: 0}
+	30% {opacity: 0}
+	45% {opacity: 1}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+@-webkit-keyframes photo-play-4 {
+	0% {opacity: 0}
+	45% {opacity: 0}
+	60% {opacity: 1}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+
+/*Firefox*/
+@-moz-keyframes fade-in {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+@-moz-keyframes photo-play-1 {
+	0% {opacity: 0}
+	15% {opacity: 1}
+	30% {opacity: 0}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+
+@-moz-keyframes photo-play-2 {
+	0% {opacity: 0}
+	15% {opacity: 0}
+	30% {opacity: 1}
+	45% {opacity: 0}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+@-moz-keyframes photo-play-3 {
+	0% {opacity: 0}
+	30% {opacity: 0}
+	45% {opacity: 1}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+@-moz-keyframes photo-play-4 {
+	0% {opacity: 0}
+	45% {opacity: 0}
+	60% {opacity: 1}
+	80% {opacity: 1}
+	100% {opacity: 1}
+}
+
+/*main style*/
+body {
+	animation: fade-in 1s;
+	-webkit-animation: fade-in 1s;
+	-moz-animation: fade-in 1s;
+	background-color: #FAFAD2;
+}
+
+div.container {
+	text-align: center;
+	margin-top: 200px;
+}
+
+/*imge style*/
+img {
+	width: 350px;
+	height: 300px;
+	border-radius: 10%;
+}
+img.photo1 {
+	animation: photo-play-1 7s;
+	-webkit-animation: photo-play-1 7s;
+	-moz-animation: photo-play-1 7s;
+}
+img.photo2 {
+	animation: photo-play-2 7s;
+	-webkit-animation: photo-play-2 7s;
+	-moz-animation: photo-play-2 7s;
+}
+img.photo3 {
+	animation: photo-play-3 7s;
+	-webkit-animation: photo-play-3 7s;
+	-moz-animation: photo-play-3 7s;
+}
+img.photo4 {
+	animation: photo-play-4 7s;
+	-webkit-animation: photo-play-4 7s;
+	-moz-animation: photo-play-4 7s;
+}
+
+/*font style*/
+strong {
+	font-family: Georgia;
+	font-size: 32px;
+	font-style: italic;
+}
+
+h1 {
+	font-family: cursive;
+	font-size: 60px;
+}
+
+/*botton style*/
+.button {
+	font-size: 40px;
+	padding: 15px 32px;
+	font-family: cursive;
+	border-radius: 30px;
+	background-color: gold;
+	cursor: pointer;
+	width: 550px;
+}
+.button span {
+	cursor: pointer;
+	position: relative;
+	transition: 0.5s;
+}
+.button span:after {
+	content: '>>';
+	position: absolute;
+	opacity: 0;
+}
+button:hover span {
+	padding-right: 30px;
+}
+button:hover span::after {
+	opacity: 1;
+	right: -30px;
+}
+
